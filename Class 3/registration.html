@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <style>
+        label{
+            width: 120px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .form-field {
+            margin: 10px;
+        }
+        input {
+            width: 200px;
+            height: 24px;
+        }
+        select {
+            width: 200px;
+            height: 24px;
+        }
+        textarea {
+            width: 200px;
+            height: 50px;
+        }
+
+        #gender label{
+            width: auto;
+            font-weight: 400;
+        }
+
+        #gender input{
+            width: 20px;
+            height: 20px;
+        }
+
+        #course label{
+            width: auto;
+            font-weight: 400;
+        }
+
+        #course input{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <section style="padding: 10px">
+      <a href="../Class%202/index.html">Home</a>
+      <a href="./index.html">Curriculum</a>
+      <a href="./registration.html">Registration</a>
+    </section>
+    <section>
+      <form action="/register">
+        <div class="form-field">
+          <label for="name">Name: </label>
+          <input type="text" id="name" placeholder="Enter your fullname..." name="name"/>
+        </div>
+        <div class="form-field">
+          <label for="email">Email: </label>
+          <input type="email" id="email" placeholder="Enter your email..." name="email" />
+        </div>
+        <div class="form-field">
+          <label for="contact">Contact: </label>
+          <input
+            type="number"
+            id="contact"
+            placeholder="Enter your contact number..."
+            name="contact"
+          />
+        </div>
+        <div class="form-field">
+          <label for="city">Select City:</label>
+          <select id="city" name="city">
+            <option value="BLR">Bangalore</option>
+            <option value="NDLS">New Delhi</option>
+            <option value="CN">Chennai</option>
+            <option value="IXR">Mumbai</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="password">Set Password: </label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div class="form-field">
+            <label for="description">Description: </label>
+            <textarea
+              type="text"
+              id="description"
+              placeholder="Enter more detail..."
+              name="description"
+            ></textarea>
+          </div>
+        <div class="form-field" id="gender">
+            <div>
+              <strong>Select Gender:</strong>
+              <label for="male">Male</label>
+              <input type="radio" id="male" name="gender" value="male"/>
+              <label for="female">Female</label>
+              <input type="radio" id="female" name="gender" value="female"/>
+            </div>
+          </div>
+          <div class="form-field" id="course">
+              <strong>Select Courses:</strong>
+              <label for="web">Web development</label>
+              <input type="checkbox" id="web" name="course" value="web"/>
+              <label for="fullstack">Fullstack development</label>
+              <input type="checkbox" id="fullstack" name="course" value="fullstack" />
+          </div>
+          
+        <div>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

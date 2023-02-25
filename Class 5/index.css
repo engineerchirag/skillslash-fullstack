@@ -1,0 +1,84 @@
+.about-me {
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 15px;
+    background-image: url('https://media.licdn.com/dms/image/D5616AQFnESIfVSytig/profile-displaybackgroundimage-shrink_350_1400/0/1673038042307?e=1681344000&v=beta&t=uEa8GQAYZtpwJJRAy0ZPNzaRpzwL9cLXG-cK3oNvzL8');
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-me > p {
+    color: green;
+}
+
+li:first-child {
+    color: red;
+}
+
+.analytics {
+    overflow-x: auto;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 2000px;
+}
+
+ul {
+    width: 2000px;
+}
+
+ul li {
+    display: inline-block;
+    height: 150px;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.arrow-right {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50%;
+    opacity: 0.6;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+
+.arrow-right:hover {
+    opacity: 1;
+}
+
+.buttons {
+    background-color: red;
+    padding: 10px 0;
+    position: sticky;
+    top: 50px;
+    z-index: 100;
+}

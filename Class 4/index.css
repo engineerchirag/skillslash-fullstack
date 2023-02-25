@@ -1,0 +1,43 @@
+.about-me {
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 15px;
+    background-image: url('https://media.licdn.com/dms/image/D5616AQFnESIfVSytig/profile-displaybackgroundimage-shrink_350_1400/0/1673038042307?e=1681344000&v=beta&t=uEa8GQAYZtpwJJRAy0ZPNzaRpzwL9cLXG-cK3oNvzL8');
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-me > p {
+    color: green;
+}
+
+li:first-child {
+    color: red;
+}
+
+.analytics {
+    overflow-x: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    width: 2000px;
+}
+
+ul li {
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    vertical-align: top;
+}
