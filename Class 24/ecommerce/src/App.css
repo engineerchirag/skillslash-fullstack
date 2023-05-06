@@ -1,0 +1,93 @@
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.product-wrapper {
+  display: flex;
+  min-width: 500px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+.left-col {
+  padding: 10px;
+}
+
+.left-col img {
+  width: 150px;
+  height: auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-col button {
+  width: 120px;
+}
+
+.header {
+  background-color: #ccc;
+  height: 60px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.product-buttons {
+  display: flex;
+}
+
+.product-buttons button {
+  margin-right: 10px;
+}
+
+.App.dark-mode, .App.dark-mode * { 
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
