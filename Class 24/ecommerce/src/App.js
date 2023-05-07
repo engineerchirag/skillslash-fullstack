@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
 import { ThemeContext, ThemeProvider } from './context/themeContext';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter([{
   path: '/',
@@ -17,7 +18,11 @@ const router = createBrowserRouter([{
 }, {
   path: '/cart',
   element: <><Header /> <Cart /></>
-}]);
+}, {
+  path: '/contact',
+  element: <><Header /><Contact /> </>
+}
+]);
 
 function App() {
   useEffect(() => {

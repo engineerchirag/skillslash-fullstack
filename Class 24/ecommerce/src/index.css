@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 20px;
+}
+
+.contact-field {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}  
+.contact-field label {
+  width: 200px;
+}
+
+.contact-field input, .contact-field  textarea {
+  width: 100%;
+}
+
+.contact-field input {
+  height: 40px;
+} 
+
+.contact-field  textarea {
+  height: 80px;
+}
+
+.contact-form button {
+  width: 120px;
+  margin-top: 10px;
+  flex-direction: row-reverse;
+}
+
+
+
+

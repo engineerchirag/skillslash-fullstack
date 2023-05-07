@@ -9,6 +9,7 @@ function Header() {
     return (
         <div className="header">
             <Link to={'/'}>Home</Link>
+            <Link to={'/contact'}>Contact</Link>
             <div>
                 <input type="checkbox" onChange={toggleTheme} />{isDarkMode? 'Change to light mode' : 'Change to dark mode'}
             </div>
