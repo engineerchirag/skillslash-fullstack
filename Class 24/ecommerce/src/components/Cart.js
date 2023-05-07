@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import Header from "./Header";
 import { UserActivityContext } from "../context/userActivityContext";
 
@@ -13,7 +13,7 @@ function Cart() {
         }, 
     []);
 
-    const totalCartValue = () => {
+    const totalCartValue = useMemo(() => {
         return Object.keys(selectedProducts).reduce((acc, itemId) => {
             const productDetail = products.find(product =>  {
                 return product.id == itemId;
@@ -23,12 +23,12 @@ function Cart() {
             }
             return acc;
         }, 0);   
-    }
+    }, [selectedProducts, products]);
 
     return (
         <>
             <div> Products in the cart</div>
-            <div>Total cart value: {totalCartValue()}</div>
+            <div>Total cart value: {totalCartValue}</div>
         </>
     )
 }
