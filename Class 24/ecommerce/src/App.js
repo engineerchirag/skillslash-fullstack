@@ -8,6 +8,9 @@ import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
 import { ThemeContext, ThemeProvider } from './context/themeContext';
 import Contact from './components/Contact';
+import Counter from './components/Counter';
+import CounterWrapper from './components/CounterWrapper';
+import List from './components/List';
 
 const router = createBrowserRouter([{
   path: '/',
@@ -21,6 +24,12 @@ const router = createBrowserRouter([{
 }, {
   path: '/contact',
   element: <><Header /><Contact /> </>
+}, {
+  path: '/counter',
+  element: <><CounterWrapper /> </>
+}, {
+  path: '/list',
+  element: <><List /> </>
 }
 ]);
 

@@ -46,6 +46,24 @@ code {
   flex-direction: row-reverse;
 }
 
+.counter-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
+.counter-wrapper > div {
+  padding: 20px;
+}
 
+.counter-wrapper .red {
+  background-color: red;
+}
+
+.counter-wrapper .green{
+  background-color: green;
+}
+
+.counter-wrapper .blue {
+  background-color: blue;
+}
 
